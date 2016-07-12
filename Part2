@@ -1,0 +1,13 @@
+Matthew Danielson
+7/11/16
+Questions for Part 2
+
+
+1) It will print usage: a <arg1> <arg2>, because the first number is 1, not 3. If that is not the case - but I believe it is - then this code wil print out the address of pointer c, and will continue to print out the addresses of pointer p in the final lines of the code.
+
+2) 1 byte from the original address of p; all of the other values are not values that are manually and dynamically created, thus they are not memory leaks.
+
+3) Line 28 
+
+4) Add before the end of main - line 34 - free(q);
+   On Line 28, the & operator is necessary to get the address of the pointer; otherwise, this code is not valid.
